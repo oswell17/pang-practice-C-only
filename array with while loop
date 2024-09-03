@@ -1,0 +1,39 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+       Console.Write("Enter your name: ");
+       string name = Console.ReadLine();
+       Console.Clear();
+       bool nottrue = false;
+       while(!nottrue){
+       Console.WriteLine("Chevy, Ford, Ferari, BMW");
+       Console.Write("Choose your Car Brand: ");
+       string choose = Console.ReadLine();
+       
+       string[] cars = {"Chevy", "Ford", "Ferari", "BMW"};
+      if(choose == "Chevy" || choose == "chevy" || choose == "CHEVY"){
+          Console.WriteLine("Your name is "+ name + " the car you choose is "+ cars[0]);
+      }
+      else if(choose == "Ford" || choose == "ford" || choose == "FORD"){
+          Console.WriteLine("Your name is "+ name + " the car you choose is "+ cars[1]);
+      }
+      else if(choose == "Ferari" || choose == "ferari" || choose == "FERARI"){
+          Console.WriteLine("Your name is "+ name + " the car you choose is "+ cars[2]);
+      }
+      else if(choose == "Bmw" || choose == "bmw" || choose == "BMW"){
+          Console.WriteLine("Your name is " + name + " the car you choose is "+ cars[3]);
+      }
+      else {
+          Console.WriteLine("Invalid! please choose the choices only!");
+          
+      }
+       }   
+       
+    }
+}
